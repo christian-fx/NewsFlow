@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html class="light" lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>NewsFlow - Stay Informed, Instantly.</title>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;700;900&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="page-container">
+        <div class="layout-container">
+            <!-- TopNavBar -->
+            <header class="header">
+                <div class="nav-container">
+                    <div class="nav-left">
+                        <div class="logo">
+                            <div class="logo-icon">
+                                <svg fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                                    <path clip-rule="evenodd" d="M24 4H6V17.3333V30.6667H24V44H42V30.6667V17.3333H24V4Z" fill="currentColor" fill-rule="evenodd"></path>
+                                </svg>
+                            </div>
+                            <h2 class="logo-text">NewsFlow</h2>
+                        </div>
+                        <nav class="nav-menu">
+                            <a class="nav-link active" href="#">Home</a>
+                            <a class="nav-link" href="#">Politics</a>
+                            <a class="nav-link" href="#">Business</a>
+                            <a class="nav-link" href="#">Technology</a>
+                            <a class="nav-link" href="#">Sports</a>
+                        </nav>
+                    </div>
+                    <div class="nav-right">
+                        <div class="search-container">
+                            <div class="search-icon">
+                                <span class="material-symbols-outlined">search</span>
+                            </div>
+                            <input class="search-input" placeholder="Search articles..." value=""/>
+                        </div>
+                        <button class="hamburger-btn" id="hamburgerBtn">
+                            <span class="material-symbols-outlined">menu</span>
+                        </button>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Mobile Menu -->
+            <div class="mobile-menu" id="mobileMenu">
+                <nav class="mobile-nav">
+                    <a class="mobile-nav-link active" href="#">Home</a>
+                    <a class="mobile-nav-link" href="#">Politics</a>
+                    <a class="mobile-nav-link" href="#">Business</a>
+                    <a class="mobile-nav-link" href="#">Technology</a>
+                    <a class="mobile-nav-link" href="#">Sports</a>
+                </nav>
+            </div>
+
+            <main class="main-content">
+                <!-- HeroSection -->
+                <div class="hero-section">
+                    <div class="hero-container">
+                        <div class="hero-content">
+                            <div class="hero-text">
+                                <h1 class="hero-title">Stay Informed, Instantly.</h1>
+                                <h2 class="hero-subtitle">Your real-time source for breaking news from around the globe.</h2>
+                            </div>
+                            <button class="cta-button">
+                                <span class="cta-text">Explore News</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- News Section -->
+                <div class="news-section">
+                    <h2 class="section-title">Latest Headlines</h2>
+                    <div class="news-grid">
+                        <!-- News Card 1 -->
+                        <div class="news-card">
+                            <div class="news-image-container">
+                                <img class="news-image" data-alt="Close-up of a complex circuit board with glowing components." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA5amJNoF6JRTS9vLL5-4_kZgJMWkZNeF_ofpbBlGDYBEb_u9RFen-y3mi-BPv_C2uWHUC2yDxai_GtNVtAOCyqHbkibXowna4SY_CK1O7xDSJ-UUAaR6x2Uue6Dywk33qWNbWUzGDREc9YA9lOvhYwWTTziJOeCgaHLYf3TffZvrDdvlHJxl1p8kjpyiXQB_9sh333IPfwjnM7pef1qW5Zhqfg1fGtlug4z1ObS4ez09KpyznsLKd6i7VrUCGNo-FcKv1BysLSd5s"/>
+                            </div>
+                            <div class="news-content">
+                                <p class="news-category">Technology</p>
+                                <p class="news-title">Tech Giants Announce Major Breakthrough in AI</p>
+                            </div>
+                        </div>
+                        
+                        <!-- News Card 2 -->
+                        <div class="news-card">
+                            <div class="news-image-container">
+                                <img class="news-image" data-alt="Stock market tickers on a digital screen." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAlXF0rqL_I9Xl4MKLeW1gwW8QzApFSS_CB_GpBYe3vL4RCBOBUv2JTjtcgynfpicefrP6CBpmxjYN6M3A26FGND3A0vwcWeYZJRJ7aLyy_hNsUo8pSV3lwJ_hljsT_A4laKP2q8LVKf0v_cs2L5_tseXiZ-9vqUS6rGkDFs58lsaQtVy7geyAeYieeu26gzmCeorT-Esp8QJwkjN2Lsy1EjPp2HuVhmWCnglyw82a9vfbtpNIOMuELAZ37RKf4QOkC0giLWg9uLTA"/>
+                            </div>
+                            <div class="news-content">
+                                <p class="news-category">Business</p>
+                                <p class="news-title">Global Markets React to New Economic Policies</p>
+                            </div>
+                        </div>
+                        
+                        <!-- News Card 3 -->
+                        <div class="news-card">
+                            <div class="news-image-container">
+                                <img class="news-image" data-alt="National flags of different countries lined up outside a building." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB7DAPe4_Kqe0unPajRoCPlUsu46n43UFDC7FiWmzM4chVOGNejVXa7k78El2vd3epPVR5l8vX89EaGvS1fdVJsMCHaNGZHTa96kFbmwRgP5Vw85Stt4s-N89GwkCHWW-Rpd7nfQzUWf2wpKCcVMc4wy9PfzEuk3uY2Cx4iL54cN5J7yNf1Afq_Q0s6Fuy0hyA_CNUvfurbGf1J8MwML8-JpBJNRncWeywhunXpYpYhFB-GLMch9XBx0OHW-yjwHQj6xLKyZKrJyjg"/>
+                            </div>
+                            <div class="news-content">
+                                <p class="news-category">Politics</p>
+                                <p class="news-title">Political Summit Ends with Landmark Agreement</p>
+                            </div>
+                        </div>
+                        
+                        <!-- News Card 4 -->
+                        <div class="news-card">
+                            <div class="news-image-container">
+                                <img class="news-image" data-alt="A football stadium filled with cheering fans at night." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC7n33XtW_Nc0T5gaBYSOHKEny5H3e1aFd8yD8VvSFIymhB3d7-GlcWv0bz5mgbbG1Vz_iO8p-T4DQ3_sflNsPJNQ0ZvJl8w0P8_iuVJBTejvEDn5IeHFl4wcQCVtnU5hsy8_ZLHWm0xoBNd0Iqbltkgib7WZvQ4LBWIKtqSrcpaIZTV57-XPGJFJyiApQ80fuhjjC6jajJTxF3sWqqxSur1SGJzW9p13eWvD2Hk5K7SPvsa7V29DHIrVTwg2oQfkzIcnBeGSgcNX4"/>
+                            </div>
+                            <div class="news-content">
+                                <p class="news-category">Sports</p>
+                                <p class="news-title">Sports Championship Sees Underdog Victory</p>
+                            </div>
+                        </div>
+                        
+                        <!-- News Card 5 -->
+                        <div class="news-card">
+                            <div class="news-image-container">
+                                <img class="news-image" data-alt="A satellite view of Earth at night, showing city lights." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCVkRPU8byxaIlB_A8_M6CU6DfQiGQ5S4K1STHIj4Sx2bsHJUwEZPd9-FjCOrs-Uc6805W1FYSvHq3Hs_mLnnl6pmUDqbZUMpA7JI4K-aPTOHyGMxn1JjtToa3yzHA0Buqo-kjYZ37mTAdyS9XKl14Ih0SpIhKts12mLdIJtD636XlBeeA5osW_F65b9yJqztWvvR2A2h4JnYEo5DDsf3_jJFhm515cMskm5TTR3hDRzInnSgiSmvrrmPYuXhF_0tLqD9-M58iQFHQ"/>
+                            </div>
+                            <div class="news-content">
+                                <p class="news-category">World</p>
+                                <p class="news-title">Cultural Festival Draws Record-Breaking Crowds</p>
+                            </div>
+                        </div>
+                        
+                        <!-- News Card 6 -->
+                        <div class="news-card">
+                            <div class="news-image-container">
+                                <img class="news-image" data-alt="A person coding on a laptop with multiple monitors." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAU-uVsIQqTaMaWai6VYq9GnJMcHOWBkQdxFVWCyQ2egPriCX0izISfQUziv4QbbHHGFw1ak29BLN2gV3iUMSjyTq4V9lk92z1ivFWupiUt0JKta9vY17_uDciJad6xTO7JfxtSKMBqkrmEZOsXBuG1cO1RhQydqtwu_A0qSvKbhV_WmzT5U_MCl2v7_I8fGOK4Et573dJ-ZHqUlhDfFQqtNO6rU3Twi7fcTKGp352MjRmPghGX0BvAbMFi8RMOCFuEISTDMQQWi1I"/>
+                            </div>
+                            <div class="news-content">
+                                <p class="news-category">Technology</p>
+                                <p class="news-title">The Future of Renewable Energy Sources Explored</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Load More Button -->
+                    <div class="load-more-container">
+                        <button class="cta-button">
+                            <span class="cta-text">Explore More News</span>
+                        </button>
+                    </div>
+                </div>
+            </main>
+
+            <!-- Footer -->
+            <footer class="footer">
+                <div class="footer-container">
+                    <div class="footer-grid">
+                        <div class="footer-column">
+                            <div class="footer-logo">
+                                <div class="logo-icon">
+                                    <svg fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                                        <path clip-rule="evenodd" d="M24 4H6V17.3333V30.6667H24V44H42V30.6667V17.3333H24V4Z" fill="currentColor" fill-rule="evenodd"></path>
+                                    </svg>
+                                </div>
+                                <h2 class="logo-text">NewsFlow</h2>
+                            </div>
+                            <p class="footer-description">Your daily source of truth. Delivering unbiased news from around the world.</p>
+                        </div>
+                        <div class="footer-column">
+                            <h3 class="footer-title">Quick Links</h3>
+                            <a class="footer-link" href="#">About Us</a>
+                            <a class="footer-link" href="#">Contact</a>
+                            <a class="footer-link" href="#">Privacy Policy</a>
+                            <a class="footer-link" href="#">Terms of Service</a>
+                        </div>
+                        <div class="footer-column">
+                            <h3 class="footer-title">Follow Us</h3>
+                            <div class="social-links">
+                                <a class="social-link" href="#">
+                                    <svg aria-hidden="true" class="social-icon" fill="currentColor" viewbox="0 0 24 24"><path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.71v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84"></path></svg>
+                                </a>
+                                <a class="social-link" href="#">
+                                    <svg aria-hidden="true" class="social-icon" fill="currentColor" viewbox="0 0 24 24"><path clip-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" fill-rule="evenodd"></path></svg>
+                                </a>
+                                <a class="social-link" href="#">
+                                    <svg aria-hidden="true" class="social-icon" fill="currentColor" viewbox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"></path></svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer-bottom">
+                        <p>© 2024 NewsFlow. All rights reserved.</p>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
